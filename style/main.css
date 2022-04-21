@@ -54,6 +54,10 @@ header nav#nav-um a:hover {
 	color: var(--cor-vermelha);
 }
 
+main {
+	margin-bottom: 5px;
+}
+
 /*Filme principal*/
 .filme-principal {
 	font-size: 17px;
