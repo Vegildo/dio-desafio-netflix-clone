@@ -1,0 +1,104 @@
+:root {
+    --cor-fundo: #F2F2F2;
+    --cor-navbar: #FFFFFF;
+    --cor-branco-transparente: #ffffff62;
+    --cor-vermelha: #E50914;
+    --cor-vermelha-transparente: #e509145e;
+    --cor-preto: #141414;
+    --cor-preto-transparente: #1414144d;
+    --cor-preto-menostransparente: #14141493;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos base*/
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--cor-navbar);
+}
+
+header {
+    background-color: var(--cor-navbar);    
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    box-shadow: 0px 0px 19px -3px var(--cor-preto-transparente);
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--cor-vermelha);
+    font-family: 'Arial Black', Times, serif;
+    font-size: 2.8rem;
+    margin-left: 10px;
+}
+
+header nav#nav-um a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--cor-preto);
+    font-size: 1rem;
+    font-family: 'Arial Black', Times, serif;
+}
+
+header nav#nav-um a:hover {
+    color: var(--cor-vermelha);
+}
+
+/*Filme principal*/
+.filme-principal {
+    font-size: 17px;
+    background: linear-gradient(var(--cor-preto-transparente),var(--cor-preto-transparente)), url('/img/kimetsu-fundo.jpg');
+    
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 30px;
+    margin-top: 12px;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 55px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: var(--cor-branco-transparente);
+    border: none;
+    color: var(--cor-navbar);
+    font-size: 13px;
+    
+    padding: 15px 25px;
+    margin-right: 17px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    cursor: pointer;
+    transition: 0.25s ease all;
+}
+
+.botao i {
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.botao:hover {
+    background-color: var(--cor-vermelha);
+}
